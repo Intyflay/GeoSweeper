@@ -57,7 +57,7 @@ public class Manager : MonoBehaviour
         
         while (numberOfMines >= 1) {
             Tile tile = tiles[Random.Range(0,tiles.Length)];
-            if (tile.SetMine() ) { //decrenent if the tile was not already a mine
+            if (tile.SetMine() ) { //decrement if the tile was not already a mine
                 numberOfMines--;
             }
         }
